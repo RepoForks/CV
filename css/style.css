@@ -3,11 +3,77 @@
 	font-size: 2.5em;
 }
 
-html, body, header, section {
+html, body, header, section, header > .container-fluid, header > .container-fluid > .row {
 	height:100%;
 }
 
-.vertical-align {
-    display: flex;
-    align-items: center;
+.logoColYellow {		
+	background: yellow;
+	height: 50%;
+}
+
+.logoColSalmon {		
+	background: salmon;
+	height: 50%;
+}
+
+
+.logoContLeft {		
+	background-color: red;   
+	position: absolute;		      
+	left:50%;
+	transform: translateX(-50%);   		
+	top: 10px;		
+}
+
+.logoContRight {		
+	position: absolute;		
+	left:50%;   
+	bottom: 10px;
+	transform: translateX(-50%);
+	background-color: red;    
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {	
+}
+
+@media (min-width: 992px) {
+
+	.logoColYellow {
+		height: 100%;		
+	}
+
+	.logoColSalmon {
+		height: 100%;		
+	}
+
+
+	.logoContLeft {		
+		top: 50%;       
+		transform: translateY(-50%);   
+		right: 10px;		   	
+	}
+
+	.logoContRight {
+		top: 50%; 
+		left:10px;   
+		transform: translateY(-50%);  		
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	header {
+		background-color: red;
+	}
 }
