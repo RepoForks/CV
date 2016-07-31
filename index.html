@@ -1,29 +1,40 @@
-  <!doctype html>
-  <html>
-  <head>
-    <meta charset="utf-8">    
-    <link rel="stylesheet" href="css/bootstrap.min.css">    
-    <link rel="stylesheet" href="css/style.css">    
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <header >
-      <div class="container-fluid">
-        <div class="row logoRow">
-          <div class="col-md-6 col-md-push-6 logoColSalmon">
-            <img src="http://dummyimage.com/300x300/000/fff" class="img-circle  img-responsive center-block logoContRight" alt="Andrei Lisun" >
-          </div>
-          <div class="col-md-6 col-md-pull-6 logoColYellow">
-            <div class="logoContLeft">
-            <div ><span class="name">Andrei Lisun</span></div>  
-              <div class="container-fluid">            
-                <div class="row">
-                  <div class="col-md-4"><a href="#resume">Resume</a></div>
-                  <div class="col-md-4"><a href="#projects">Projects</a></div>
-                  <div class="col-md-4"><a href="#contacts">Contacts</a></div>
-                </div>
-              </div>          
-            </div>      
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">    
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Andrei Lisun</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">    
+      <link rel="stylesheet" href="css/style.css">    
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/smooth_scroll.js"></script>    
+    </head>
+    <body>
+      <header >      
+        <div class="container-fluid">
+          <div class="row">
+            <div class="row-height">
+              <div class="col-xs-12 col-md-6 col-xs-height col-md-height col-middle" style="background:red">
+               <div>          
+                 <img src="http://placehold.it/400x400/000000" class="center-block img-circle  img-responsive" alt="Andrei Lisun" >             
+               </div>
+             </div>
+             <div class="col-xs-12 col-md-6 col-xs-height col-md-height col-middle" style="background:green">
+               <div class="inside">                              
+                 <div class="container-fluid">            
+                  <div class="row">
+                    <div class="col-xs-12"><h1 class="text-centered">Andrei Lisun</h1></div>
+                    <div class="col-md-4 text-centered"><a href="#resume">Resume</a></div>
+                    <div class="col-md-4 text-centered"><a href="#projects">Projects</a></div>
+                    <div class="col-md-4 text-centered"><a href="#contacts">Contacts</a></div>
+                  </div>
+                </div>                   
+              </div>           
+            </div>
           </div>
         </div>
       </div>
@@ -38,18 +49,39 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
     </section>
-    <section id="projects" style="background:salmon">
-      <div>
-        <br/><br/>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <section id="projects" style="background:red">
+      <div class="container" style="background:yellow">
+        <div id="projects-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="http://placehold.it/1000x1000/000000" alt="Pro1">
+            </div>
+
+            <div class="item">
+              <img src="http://placehold.it/1000x1000/ffffffff" alt="Pro2">
+            </div>
+
+            <div class="item">
+              <img src="http://placehold.it/1000x1000/000000" alt="Pro3">
+            </div>
+
+            <div class="item">
+              <img src="http://placehold.it/1000x1000/ffffffff" alt="Pro4">
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#projects-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#projects-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </section>
-     <section id="contacts">
+    <section id="contacts">
       <div>
         <br/><br/>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

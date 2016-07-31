@@ -1,79 +1,57 @@
-.name {	
-	font-family: 'Josefin Slab', serif;
-	font-size: 2.5em;
+body {
+	font-size: 16px;
 }
 
-html, body, header, section, header > .container-fluid, header > .container-fluid > .row {
-	height:100%;
+h1 {	
+	font-family: 'Josefin Slab', serif;	
 }
 
-.logoColYellow {		
-	background: yellow;
-	height: 50%;
+section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
-.logoColSalmon {		
-	background: salmon;
-	height: 50%;
+.text-centered {
+	text-align: center;
 }
 
-
-.logoContLeft {		
-	background-color: red;   
-	position: absolute;		      
-	left:50%;
-	transform: translateX(-50%);   		
-	top: 10px;		
+.row-height {
+	display: table;
+	table-layout: fixed;
+	height: 100%;
+	width: 100%;    
 }
 
-.logoContRight {		
-	position: absolute;		
-	left:50%;   
-	bottom: 10px;
-	transform: translateX(-50%);
-	background-color: red;    
+.col-middle {
+	vertical-align: middle;
 }
 
-/********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 480px) {			
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {	
+@media (min-width: 768px) {		
 }
 
 @media (min-width: 992px) {
-
-	.logoColYellow {
-		height: 100%;		
+	html, header, body, section, header > .container-fluid, header > .container-fluid > .row {
+		height:100%;	
 	}
 
-	.logoColSalmon {
-		height: 100%;		
-	}
-
-
-	.logoContLeft {		
-		top: 50%;       
-		transform: translateY(-50%);   
-		right: 10px;		   	
-	}
-
-	.logoContRight {
-		top: 50%; 
-		left:10px;   
-		transform: translateY(-50%);  		
+	.col-md-height {
+		display: table-cell;	
+		float: none;		
+		height: 100%;
 	}
 }
 
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-	
+@media (min-width: 1200px) {
+
 }
 
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-	header {
-		background-color: red;
-	}
-}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
