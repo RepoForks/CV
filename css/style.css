@@ -1,21 +1,28 @@
+/*Width of 320px is considered as basis. For other screen sizes media queries created*/
+/*COLORS
+accent : #70DBFF
+dark background: #292929*/
 body {
-	font-size: 16px;
+	font-family: 'Josefin Slab', serif;	
+	font-size: 20px;
 }
 
-h1 {	
-	font-family: 'Josefin Slab', serif;	
+h1 {		
+	font-size: 45px;	
+	text-align: center;
 }
 
 h2 {
-	font-family: 'Josefin Slab', serif;		
-	font-size: 3em;
+	font-size: 30px;
+	color: #70DBFF;		
 }
 
 section {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
 }
 
 .row-height {
@@ -25,27 +32,66 @@ section {
 	width: 100%;    
 }
 
-
-.text-centered {
-	text-align: center;
-}
-
 .col-middle {
-	vertical-align: middle;
+	vertical-align: middle;		 
 }
 
-.wrapper-center {
-	display: table;
-	table-layout: fixed;
-	height: 100%;
-	width: 100%;      
+#img-container {
+	padding-top: 10px;
 }
 
-.inner-center {  
-	display: table-cell;	
-	float: none;		
-	height: 100%;		
-	vertical-align: middle;
+#resume, #contacts {	
+	background-color: #292929;
+}
+
+#resume p,  #contacts p{
+	color: white;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-indicators {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 5px;
+    padding-bottom: 8px;
+    width: 100%;
+    border-top: 1px solid #eee;
+    background: #ffffff;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 1px;
+    width: 45px;
+    height: 5px;
+    border: none;
+    border-radius: 0px;
+    background: #eeeeee;
+    text-indent: -999px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    width: 45px;
+    height: 5px;
+    border: none;
+    border-radius: 0px;
+    background: #70DBFF;
+}
+
+.app-screenshot {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px 15px 15px 15px;        
 }
 
 @media (min-width: 480px) {			
@@ -55,7 +101,7 @@ section {
 }
 
 @media (min-width: 992px) {
-	html, header, body, section, header > .container-fluid, header > .container-fluid > .row {
+	html, header, body, header > .container-fluid, header > .container-fluid > .row {
 		height: 100%;	
 	}
 
@@ -68,10 +114,4 @@ section {
 
 @media (min-width: 1200px) {
 
-}
-
-
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-	width: 70%;
-	margin: auto;
 }
