@@ -6,15 +6,16 @@ h1 {
 	font-family: 'Josefin Slab', serif;	
 }
 
+h2 {
+	font-family: 'Josefin Slab', serif;		
+	font-size: 3em;
+}
+
 section {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-right: 20px;
 	padding-left: 20px;
-}
-
-.text-centered {
-	text-align: center;
 }
 
 .row-height {
@@ -24,7 +25,26 @@ section {
 	width: 100%;    
 }
 
+
+.text-centered {
+	text-align: center;
+}
+
 .col-middle {
+	vertical-align: middle;
+}
+
+.wrapper-center {
+	display: table;
+	table-layout: fixed;
+	height: 100%;
+	width: 100%;      
+}
+
+.inner-center {  
+	display: table-cell;	
+	float: none;		
+	height: 100%;		
 	vertical-align: middle;
 }
 
@@ -36,7 +56,7 @@ section {
 
 @media (min-width: 992px) {
 	html, header, body, section, header > .container-fluid, header > .container-fluid > .row {
-		height:100%;	
+		height: 100%;	
 	}
 
 	.col-md-height {
@@ -52,6 +72,6 @@ section {
 
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
+	width: 70%;
+	margin: auto;
+}
