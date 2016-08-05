@@ -9,17 +9,17 @@ body {
 
 header h1 {		
 	padding-bottom: 5%; 
-	font-size: 2.3em;	
+	font-size: 2em;	
 	text-align: center;
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.4em;
 	color: #70DBFF;		
 }
 
 section {
-	padding: 7%;	
+	padding: 5%;	
 	text-align: center;
 }
 
@@ -38,7 +38,7 @@ section {
 	padding:5%;
 }
 
-#resume, #contacts {	
+#resume, #contacts  {	
 	background-color: #292929;
 }
 
@@ -46,10 +46,19 @@ section {
 	color: white;
 }
 
+.carousel-container {
+	margin-top: 5%;
+}
+
 .carousel-inner {
     position: relative;
     overflow: hidden;
     width: 100%;
+}
+
+.carousel-inner h3 {
+	color:  #70DBFF;	
+	font-size: 1em;
 }
 
 .carousel-indicators {
@@ -90,6 +99,17 @@ section {
     padding: 7%;    
 }
 
+.copyright-container {
+	padding: 1%;
+	background-color: #292929;
+}
+
+.copyright-container p {
+	font-size: 0.5em;
+	color: white;
+	text-align: center;
+}
+
 @media (min-width: 480px) {
 	header h1 {
 		font-size: 3.3em;
@@ -99,9 +119,13 @@ section {
 		font-size: 2em;		
 	}	
 
-	p {
+	p, .carousel-inner h3 {
 		font-size: 1.2em;
-	}		
+	}	
+
+	.copyright-container p {
+		font-size: 0.7em;	
+	}	
 }
 
 @media (min-width: 768px) {	
@@ -113,8 +137,12 @@ section {
 		font-size: 2.5em;		
 	}	
 
-	p {
+	p, .carousel-inner h3 {
 		font-size: 1.4em;
+	}	
+
+	.copyright-container p {
+		font-size: 0.9em;	
 	}		
 }
 
@@ -126,11 +154,16 @@ section {
 
 	header h1 {		
 		padding: 0%;
-		color: #70DBFF;
+		color: white;
+		font-size: 3.5em;
 	}	
 
-	p {
+	p, .carousel-inner h3 {
 		font-size: 1.6em;
+	}	
+
+	.copyright-container p {
+		font-size: 1.1em;	
 	}	
 
 	.col-md-height {
@@ -150,14 +183,18 @@ section {
 
 @media (min-width: 1200px) {
 	header h1 {	
-		font-size: 4.7em;
+		font-size: 4.3em;
 	}
 
 	h2 {
 		font-size: 3em;		
 	}	
 
-	p {
+	p, .carousel-inner h3 {
 		font-size: 1.8em;
+	}	
+
+	.copyright-container p {
+		font-size: 1.3em;	
 	}	
 }
